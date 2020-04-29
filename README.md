@@ -1,5 +1,5 @@
-# 用cloudflare的workers实现自助创建微软全局子号
-# https://m.ur.workers.dev/
+# 用Azure的github部署实现自助创建365子号
+# https://365a1.azurewebsites.net
 
 
 1 进入azure AD新建一个app，获取tenant id和client id
@@ -10,5 +10,11 @@
 
 3 获取订阅的 skuid，自行谷歌一下方法吧，用powershell之类的
 
-4 复制 index.js 里面的内容到 cf workers 里面，填入相应的数据
+修改相应数据
+tenant_id = ''
+client_id = ''
+client_secret = ''
+skuId = '314c4481-f395-4525-be8b-2ec4bb1e9d91'
+# skuId = '94763226-9b3c-4e75-a931-5c89701abe66'
+domain = ''
 
